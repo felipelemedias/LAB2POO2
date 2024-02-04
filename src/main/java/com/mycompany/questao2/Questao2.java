@@ -36,9 +36,9 @@ public class Questao2 {
                     switch (toyotaOrHonda) {
                         case "toyota" -> {
                             System.out.println("Você está na sessão Toyota, escolha um dos modelos(digite):");
-                            System.out.println("1. Hilux");
-                            System.out.println("2. Corolla");
-                            System.out.println("3. Etios");
+                            System.out.println("- Hilux");
+                            System.out.println("- Corolla");
+                            System.out.println("- Etios");
                             System.out.println("Opção: ");
                             String modeloDesejadoT = scanner.nextLine().toLowerCase();
                             IVehicle toyota = toyotaFactory.makeVehicle(modeloDesejadoT);
@@ -46,19 +46,19 @@ public class Questao2 {
                             if (toyota != null) {
                                 switch (modeloDesejadoT) {
                                     case "hilux" -> {
-                                        System.out.println("Você tem um " + modeloDesejadoT);
+                                        System.out.println("Você possuí uma " + modeloDesejadoT);
                                         toyota.start();
                                         toyota.stop();
                                         toyota.drive();
                                     }
                                     case "corolla" -> {
-                                        System.out.println("Você tem um " + modeloDesejadoT);
+                                        System.out.println("Você possuí um " + modeloDesejadoT);
                                         toyota.start();
                                         toyota.stop();
                                         toyota.drive();
                                     }
                                     case "etios" -> {
-                                        System.out.println("Você tem um " + modeloDesejadoT);
+                                        System.out.println("Você possuí um " + modeloDesejadoT);
                                         toyota.start();
                                         toyota.stop();
                                         toyota.drive();
@@ -68,28 +68,28 @@ public class Questao2 {
                     }
                         case "honda" -> {
                             System.out.println("Você está na sessão Honda, escolha um dos modelos(digite):");
-                            System.out.println("1. Civic");
-                            System.out.println("2. City");
-                            System.out.println("3. Fit");
+                            System.out.println("- Civic");
+                            System.out.println("- City");
+                            System.out.println("- Fit");
                             String modeloDesejadoH = scanner.nextLine().toLowerCase();
                             IVehicle honda = hondaFactory.makeVehicle(modeloDesejadoH);
 
                             if (honda != null) {
                                 switch (modeloDesejadoH) {
                                     case "civic" -> {
-                                        System.out.println("Você tem um " + modeloDesejadoH);
+                                        System.out.println("Você possuí um " + modeloDesejadoH);
                                         honda.start();
                                         honda.stop();
                                         honda.drive();
                                     }
                                     case "city" -> {
-                                        System.out.println("Você tem um " + modeloDesejadoH);
+                                        System.out.println("Você possuí um " + modeloDesejadoH);
                                         honda.start();
                                         honda.stop();
                                         honda.drive();
                                     }
                                     case "fit" -> {
-                                        System.out.println("Você tem um " + modeloDesejadoH);
+                                        System.out.println("Você possuí um " + modeloDesejadoH);
                                         honda.start();
                                         honda.stop();
                                         honda.drive();
